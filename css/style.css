@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Bellefair|Comfortaa|Satisfy|Slabo+27px|Vidaloka');
+@import url('https://fonts.googleapis.com/css?family=Caveat|Merriweather:300|Pacifico|Permanent+Marker|Ruge+Boogie|Raleway|Tangerine&display=swap');
+
+@font-face {
+font-family:proxima-nova;
+src:
+url(https://use.typekit.net/af/919204/00000000000000003b9aefc2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"), url(https://use.typekit.net/af/919204/00000000000000003b9aefc2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"), url(https://use.typekit.net/af/919204/00000000000000003b9aefc2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");
+font-weight:600;
+font-style:normal;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+/*    width: 100%;*/
+    height: 100%;
+    background-color: #F8ECEC; 
+/*    border: 5px solid blue;*/
+}
+
+.sec3, .sec2, .index-animate, .index-header, .video-header, .video-sec1, .sec2, .video-sec2, .form-wrapper,
+.assign-sec1 {
+    background-color: #F8ECEC; 
+}
+
+.long {
+/*    height: 4000px;*/
+}
+
+.index-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20vh;     
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background: rgb(56,158,71);
+    background: radial-gradient(90deg, rgba(56,158,71,1) 46%, rgba(79,191,96,1) 100%, rgba(13,245,5,1) 100%);
+    z-index: 999;   
+/*    border: 10px solid blue;*/
+}
+
+.index-nav  img {
+    flex: 0 1 0;
+    width: 10%;
+    height: 100%;
+    order: 0;
+    margin-right: 50vw;
+    
+    border-radius: 30%;
+}
+
+
+nav {
+    flex: 1 1 0;
+    align-self: flex-end;
+    width: 100%;
+    max-height: 100%;
+    margin: 0px 0px;
+/*    padding: 50px 0px;*/
+/*    border: 5px solid purple;*/
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+
+nav ul li a {
+    display: inline-block; 
+    max-height: 100%;
+        
+    text-transform: lowercase;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #000;
+
+    margin: 0 10px;
+    padding: 10px;
+/*    border: 2px solid red;*/
+}
+
+
+nav ul li a:hover {
+  color: #000;
+}
+
+nav ul li a, nav ul li a:after, nav ul li a::before {
+  transition: all .5s;
+}
+
+/* SHIFT */
+nav ul li a {
+    position:relative;
+    z-index: 1;
+}
+
+nav ul li a:hover {
+    color: #91640F;
+}
+
+
+nav ul li a:active::before {
+    background: #FFD700;
+/*    transform: scaleX(1);*/
+}
+
+nav ul li a::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+/*  width: 100%;*/
+    height: 1%;
+    content: '.';
+    color: transparent;
+    background: #FFD700;
+    visibility: none;
+    opacity: 0;
+    z-index: -9999;
+}
+
+nav ul li a:hover::after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+
+.index-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background:  url("../images/christmas-decorations-1816478_1280.jpg") no-repeat fixed center center;
+    background-size: cover;
+    
+    height: 50vh;
+    width: 100%;
+    margin-top: 20vh;
+    
+    font-family:proxima-nova;
+    font-weight:600;
+    font-style:normal;
+
+    font-variant: bold;
+    text-transform: uppercase;
+    
+/*    border: 10px solid brown;*/
+}
+
+
+body.index a.index, body.video a.video, body.assign a.assign {
+    background-color: #C70039;
+}
+
+/* ----------------------------------------------------------------------------
+   Animation section on Index page
+   ---------------------------------------------------------------------------- */
+
+.index-animate {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+/*    margin-top: 20vh;*/
+/*    border: 10px solid pink;*/
+}
+ 
+
+.index-story {
+    flex: 1 0 0;
+/*    width: 70px;*/
+/*    height: 200px;*/
+    background-color: fuchsia;
+    padding: 50px;
+    margin: 20vh 20px 0;
+/*    border: 5px solid brown;*/
+}
+
+.sec1 {
+    position: relative;
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-around;*/
+    background: url("../images/cute-winter-desktop-wallpapers.jpg") no-repeat scroll center center;
+    background-size: cover;
+        
+/*    width: 100%;*/
+    height: 80vh;
+    max-height: 80vh;
+/*    margin-top: 30vh;*/
+    margin: 20vh 20px 0;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex: 1 1 0;
+/*    border: 8px solid purple;*/
+}
+
+.scene-winter {
+    flex: 1 0 0;
+    width: 70px;
+/*    border: 5px solid magenta;*/
+}
+
+.sec1 h4 {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+ 
+
+/* ----------------------------------------------------------------------------
+   Animation reference for snowflakes: https://pajasevi.github.io/CSSnowflakes/
+   ---------------------------------------------------------------------------- */
+
+.snowflakes {
+    position: relative;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    text-shadow: 0 0 5px #000;
+    padding: 20px;
+    height: 100%;
+    border: 2px solid #228B22;
+}
+
+.snowflake {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+/*    z-index:9999;*/
+    user-select:none;
+    cursor: default;
+}
+
+
+.index-train {
+    position: absolute;   
+    bottom: 10%;
+    left: -350px;
+    height: 100px;
+    width: 250px;
+    background-color: green;
+/*    border: 5px solid blue;*/
+/*    z-index: 999;*/
+}
+
+/* hover on an element and animate on another element */
+.sec1:hover > .snowflakes > .snowflake {
+    animation-name:snowflakes-fall, snowflakes-shake;
+    animation-duration:12s,         3s;
+    animation-direction: normal,    normal;
+    animation-timing-function:linear,ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running,  running;
+}
+
+/* hover on an element and animate on another element */
+.sec1:hover > .index-train {
+    animation-name: travel;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-duration: 8.0s;   
+}
+
+@keyframes snowflakes-fall{
+    from { background-color: white; top: 0; }
+    to { background-color: lightblue; top: 80%; }
+
+    overflow: hidden;
+}
+
+@keyframes snowflakes-shake{
+    0%,100%{transform:translateX(0)}
+    50%{transform:translateX(50px)}
+}
+
+
+.tree {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    
+}
+.tree: hover {
+    animation-name: travel;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-duration: 8.0s;
+}
+
+
+@keyframes travel {
+    from { left: 100%; }
+    to   { left: -100%; }
+}
+ 
+
+.snowflake:nth-of-type(1) {
+/*    background-color: blue;*/
+    left:10%;
+    animation-delay:1s,1s}
+
+.snowflake:nth-of-type(2) {
+/*    background-color: green;*/
+    left:20%;
+    animation-delay:6s,.5s}
+
+.snowflake:nth-of-type(3) {
+/*    background-color: pink;*/
+    left:30%;
+    animation-delay:4s,2s}
+
+.snowflake:nth-of-type(4) {
+/*    background-color: black;*/
+    left:40%;
+    animation-delay:2s,2s}
+.snowflake:nth-of-type(5) {
+/*    background-color: turquoise;*/
+    left:50%;
+    animation-delay:8s,3s}
+
+.snowflake:nth-of-type(6) {
+/*    background-color: brown;*/
+    left:60%;
+    animation-delay:6s,2s}
+
+.snowflake:nth-of-type(7) {
+/*    background-color: red;*/
+    left:70%;
+    animation-delay:2.5s,1s}
+
+.snowflake:nth-of-type(8) {
+/*    background-color: yellow;*/
+    left:80%;
+    animation-delay:1s,0s}
+
+.snowflake:nth-of-type(9) {
+/*    background-color: gray;*/
+    left:90%;
+    animation-delay:3s,1.5s}
+
+.snowflake:nth-of-type(10) {
+/*    background-color: navajowhite;*/
+    left:95%;
+    animation-delay:2s,0s}
+
+.snowflake:nth-of-type(11) {
+/*    background-color: deepskyblue;*/
+    left:45%;
+    animation-delay:4s,2.5s}
+
+.snowflake:nth-of-type(12) {
+/*    background-color: violet;*/
+    left:5%;
+    animation-delay:1s,1s}
+
+
+/* ------------------------------------------------ 
+   Index page: CSS for banner decor
+   ------------------------------------------------ */
+.index-decor {
+    position: relative;
+    height:20vh;
+    max-width: 100%;
+    margin: 0 0% 0;
+    background:
+      repeating-linear-gradient(90deg, transparent, transparent 50px,  rgba(255, 127, 0, 0.25) 50px, 
+          rgba(255, 127, 0, 0.25) 56px,  transparent 56px, transparent 63px,
+          rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,  
+          transparent 69px, transparent 116px,  rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+      repeating-linear-gradient(0deg, transparent, transparent 50px,  
+          rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,  transparent 56px, transparent 63px,
+          rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,     transparent 69px, transparent 116px, 
+          rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+      repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(143, 77, 63, 0.25) 5px, 
+          rgba(143, 77, 63, 0.25) 10px),
+      repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(143, 77, 63, 0.25) 5px, 
+          rgba(143, 77, 63, 0.25) 10px);
+    filter: grayscale(75%);
+}
+
+
+/* ------------------------------------------------ 
+   Index page: CSS for Santa's Elves
+   ------------------------------------------------ */
+
+.sec3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+/*    border: 10px solid orange;*/
+    margin-bottom: 15vh;
+}
+
+.santa-elves {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+}
+
+.santa-elves-sub {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+/*    border: 10px solid violet;   */
+}
+
+.santa-elves-sub p, .santa-elves-sub img {
+    flex: 1 1 0;
+    padding: 20px;
+}
+
+.santa-elves img {
+    max-width: 150px;
+    height: 150px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 8px;
+/*    border: 2px solid red;    */
+}
+
+.elves-desc  {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+/*    margin-left: 50%;    */
+/*    display: block;*/
+    width: 100%;
+    height:100%;
+/*    border: 10px solid aqua;*/
+}
+
+.elves {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+/*    align-content: center;*/
+    
+/*    flex: 1 0 0;*/
+    width: 100%;
+/*    max-height: 100%;*/
+    height: 80vh;
+/*    here height 100%*/
+/*    z-index: -999;*/
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border: 2px solid red;
+}
+
+
+.elves a {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 1 0 0;
+/*    width: 100%;*/
+    height: 100%;
+/*    border: 10px solid yellow;*/
+    color: #fff;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,28,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+.elves article {
+    position: relative;
+    flex: 50%;
+    width: 100%;
+    height: 100%;
+    background: #000; 
+/*    border: 5px solid purple;*/
+}
+
+#snowball,#bushy, #pepper, #shinny, #sugarplum, #openslae{
+    background: ("../images/santas_elf_base.jpg");
+}
+
+.elf h2 {  opacity: 0; transition: opacity .2s ease-in-out; color: #5EB246; }
+.elf p  {  opacity: 0; transition: opacity .2s ease-in-out; color: #b24646; }
+
+.snowball:hover, .bushy:hover, .pepper:hover, .shinny:hover, .sugarplum:hover, .openslae:hover {
+    box-shadow: 0 0 20px 10px #5EB246;
+}
+
+.elves:hover > .elf h2, .elves:hover > .elf p {
+    opacity: 1;
+/*    background-image: none;*/
+}
+
+
+/* ------------------------------------------------ 
+   Video: CSS for video page (video.html)
+   ------------------------------------------------ */
+
+.video-sec1 {
+    position: relative;
+    max-width: 100%;
+    width: 100vw;
+/*    margin-top: 5%;*/
+    padding-bottom: 10px;
+/*    border: 10px solid red;*/
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video h1 {
+    margin-top: 15%;
+    text-align: center;
+
+    font-family:proxima-nova;
+    font-weight:600;
+    font-style:normal;
+    font-variant: bold;
+    text-transform: uppercase;
+
+}
+
+#fullvid {
+    width: 100%;
+    height: 100%;
+    background: url(../images/three-wise-kings.jpg) no-repeat fixed center center; 
+    background-size:  cover;    
+    border: 5px solid #008000;
+}
+
+
+.video-sec1 .video-text {
+    position: sticky;
+    display: flex;
+    top: 50%;
+    color: #fff;
+    font: 40px bold serif;
+    text-transform: capitalize;
+    line-height: 2vmax; 
+    text-align: center;
+    font: Arial;
+    font-size: 3em;
+}
+
+
+.video-sec2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    max-width: 100vw;
+    width: 100%;
+    
+    height: 100%;
+    max-height: auto;
+    
+    margin-top: 10px;
+/*    border: 10px solid blue;*/
+}
+
+.video-sec2 article{
+    flex: 1 1 0;
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    font-family:  "Times New Roman", Courier, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.video-sec2 article p.multi {
+    line-height: 1.1em;
+    text-indent: 1.2em;
+}
+
+.video-sec2 iframe {
+    max-width: 100%;
+    width: auto;
+    background: url(../images/christmas-1010749_1280.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+#footer-bottom {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 15vh;
+    
+    margin-top: 10vh;
+    padding: 1em; 
+    
+    background: rgb(56,158,71);
+    background: radial-gradient(90deg, rgba(56,158,71,1) 46%, rgba(79,191,96,1) 100%, rgba(13,245,5,1) 100%);
+    
+/*    border: 5px solid blue;*/
+}
+
+#form-wrapper {
+    position: relative;
+    width: 60%;
+    background: #eee;
+    padding: 20px;
+    margin: 20px auto;
+    margin-bottom: 15vh;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=email], input[type=radio]:focus {
+    width: 60%;
+    padding: 12px 0px 4px;
+    margin: 6px 0  20px;
+    display: block;
+    border: none;
+    border-bottom: 1px dotted #000;
+    border-radius: 4px;
+    font-size: 22px;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    color: #000;
+    background: #eee;
+    transition: all .3s;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=radio]:focus{
+    width: 100%;
+    background: #eee;
+    color: #f00;
+    outline: none;
+    border-bottom: 1px dotted #f00;
+}
+
+input[type=submit], input[type=reset] {
+    display: inline-block;
+    width: 20%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 14px 10px 14px 0;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family:  Georgia, "Times New Roman", Times, serif;
+    transition: all .3s;
+}
+
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #eee;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 6px 0 20px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px dotted #000;
+    background-color: #fff;
+    font-size: 22px;
+    resize: none;
+    color: #333;
+    transition: all .3s;
+}
+
+textarea:focus {
+    background: #333;
+    color: #fff;
+    outline: none;
+    border-bottom: 1px dotted #f00;
+}
+
+label {
+    font-family: verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------ 
+   Assign: CSS for assignment(assign.html) page
+   ------------------------------------------------ */
+
+
+.assign-sec1>div, .assign-bottom>div{
+    height: 100%;
+    max-height: 100vh;
+    padding: 20px;
+}
+
+.assign-top {
+    position: relative;
+    margin-top: 20vh;
+    text-align: center;
+
+    font-family:proxima-nova;
+    font-weight:600;
+    font-style:normal;
+    font-variant: bold;
+    text-transform: uppercase;
+}
+
+.assign-bottom {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.homework-desc {
+    position: relative;
+    display: block;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 100%;
+    max-height: 100vh;
+    order: 2;
+    flex: 2 0 0;
+}
+
+.homework{
+    position: relative;
+    flex: 1 0 0;
+    order: 1;
+}
+
+.homework ul {
+    list-style-type: square;
+}
+
+.homework-desc p {
+    display: block; 
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 2em;
+    color: blueviolet;
+}
+
+
+/* ------------------------------------------------ 
+   Media Queries: Tablet layout
+                  - 800px to 992px
+                  - Inherits from desktop layout
+   ------------------------------------------------ */
+@media only screen and (max-width: 992px) {
+    
+body {background: #eee;}
+    
+}
+
+
+/* ------------------------------------------------ 
+   Media Queries: Mobile layout
+                  - up to 800 px 
+                  - Inherits from desktop layout
+   ------------------------------------------------ */
+@media only screen and (max-width: 800px) {
+    
+body {background: #eee;}
+    
+#elves {
+    display: flex;
+    flex-direction: column;}
+   
+nav a {
+    background-color: #9c1a04;}
+ 
+.video-sec2 {
+    flex-direction: column;
+    height: auto;
+    max-height: 100%;}
+}
+

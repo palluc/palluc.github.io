@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Cairo|Oswald&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 5vh;
+    font-family: Gotham, Helvetica, sans-serif;
+    background: #999;
+    position: relative;
+}
+
+section {
+    height: 100%;
+}
+
+/* ---------------------------------------- 
+   Section 1
+   ---------------------------------------- */
+
+.sec1 article {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr minmax(0,40ch) 1fr; 
+    grid-template-rows:    1fr minmax(1fr,100px) 1fr; 
+    width: 100%;
+    height: 100vh;
+}
+
+
+.sec1 img {
+    grid-column: 2 / 5;
+    grid-row: 1 / 5;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10%;
+}
+
+.sec1 h1 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    align-self: end;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 1.4rem; /* must do maths for rem 1 rem=16px */
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.sec1 p {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    align-self: start;
+    background: white;
+    padding: 1.4rem;
+    margin: 0;
+}
+
+/* ---------------------------------------- 
+   Section 2
+   ---------------------------------------- */
+
+
+.sec2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    width: 100%;
+}
+
+
+.fig { 
+/*    border: 1px solid #333;*/
+    flex: 25% 0 0;
+    max-width: 25%;
+}
+
+
+.fig img {
+    margin-top: 8px;
+    width: 100%;
+    height: 250px;
+}
+
+/* ---------------------------------------- 
+   Section 3
+   ---------------------------------------- */
+
+.sec3 {
+    margin-top: 0.5vh;
+    margin-bottom: 6rem;
+    height: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100px,1fr),1fr)); 
+    
+/*    grid-template-rows: repeat(auto-fit, minmax(min(100px,1fr),1fr));*/
+/*    grid-template-columns: 200px 250px 100px 200px 200px; not responsive */
+/*    grid-template-columns: repeat(auto-fill, minmax(1fr/6,100px));*/
+/*    grid-template-rows: repeat(4, minmax(1fr,200px));*/
+
+    grid-gap: 10px;
+    grid-auto-flow: row;
+/*    border: 5px solid purple;*/
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #999;
+    color: #01060d;
+    border-radius: 5px;
+    padding: 0px;
+/*    font-size: 150%;*/
+    
+    height: 100%;
+    max-height:100%; 
+/*    border: 5px solid red;*/
+}
+
+
+.box-img {
+    width: 100%;
+    height: 80%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.box figcaption {
+    max-height: 100%;
+    flex: 1 1 0;
+    bottom: 0;
+    background-color: #333;
+
+}
+
+
+.sec3 article {
+    max-height: 100%;
+}
+
+
+.sec3 article ul {
+    list-style-type:square;
+    list-style-position: inside;
+}
+
+.sec3 article p, .box ul {
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1;
+}
+
+.sec3 article h6, .box figcaption {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: semi-bold;
+    text-transform: capitalize;
+    line-height: 1;
+    background-color: #333;
+    color: #eee;
+}
+
+.sec3 article h6 {
+    height: 12%;
+}
+
+/* grid-area = grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+
+.box-three {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+}
+.box-seven {
+    grid-area: 2 / 1 / 4 / 2;
+}
+.box-nine {
+    grid-area: 1 / 2 / 3 / 4;
+}
+.box-twelve {
+    grid-row: 2 / 4;
+    grid-column: 4 / 6;
+}
+.box-four {
+    grid-area: 4 / 4 / 5 / 6;
+}
+.box-five {
+    grid-area: 5 / 3 / 8 / 4;
+}
+.box-ten {
+    grid-area: 5 / 4 / 7 / 6;
+    text-align: center;
+}
+.box-eleven {
+    grid-area: 5 / 1 / 7 / 3;
+    text-align: center;
+}
+
+.box:nth-child(all) {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+#footer-end {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9c1a04;
+/*    border: 5px solid green;*/
+}
+
+
+

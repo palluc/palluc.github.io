@@ -1,0 +1,19 @@
+div {
+    background-color: #333;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    font-size: 25px;
+    padding: 20px; /* width will not be 100px anymore when add padding - will need to control this. */
+    box-sizing: border-box; /* prevents padding or border from increasing the width and height of an element */
+}
+
+.rel {
+    background-color: crimson;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    /*z-index: -1;*/
+    
+}

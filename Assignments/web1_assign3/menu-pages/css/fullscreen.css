@@ -1,0 +1,69 @@
+/* Universal selector*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+html, body {
+    height: 100%;
+    
+}
+*/
+
+section {
+    width: 100%; /* already has width of 100% because it is a block element */
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    /*border: solid 1px red;*/
+}
+
+#s1 {
+    background: url(../images/bg1.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+#s2 {
+    background: url(../images/bg2.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+#s3 {
+    background: url(../images/bg3.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+
+#s1 article {
+    width:  40%;
+    background: #eee;
+    padding: 20px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    
+}
+
+#s2 article {
+    width: 40%;
+    background: #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#s2 h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#s3 article{
+    width:  40%;
+    background: #eee;
+    padding: 20px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}

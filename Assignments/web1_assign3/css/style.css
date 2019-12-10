@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+/*    border: 15px dashed red;*/
+}
+
+
+nav, footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+
+nav {        
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:active {
+    display: block;
+    background-color: #4CAF50;
+    color: #f88379; /* (coral) */
+}
+    
+nav a:hover {
+    display: block;
+    background-color: #ddd;
+    color: black;
+}
+
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+article {
+    width: 50%;
+    margin: 15px;
+    border: 1px solid #000;
+    background: #fff;
+    max-height: 80%;
+}
+
+article li {
+    list-style-position: inside;
+    list-style-type: square;
+    padding: 5px;
+}
+
+article div {
+    padding: 20px;
+}
+
+
+#news_s1 {
+    background: url("../images/newspaper_bkgd.jpg") no-repeat fixed center;
+    background-size: cover;
+    border: 5px solid grey;
+    max-height: initial;    
+ }
+
+#news_s1 article {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    overflow: auto;
+}
+
+#news_s1 p, #culture_s2 p, #book_s3 p {
+    padding: 5px;
+}
+
+
+#culture_s2 {
+    background: url("../images/leaves2_bkgd.jpg") no-repeat fixed center;
+    background-size: cover;
+    border: 5px solid grey;
+}
+
+
+article.sports {
+    position: relative;
+    left: 20%;
+}
+
+
+#book_s3 {
+    background: url("../images/books_bkgd.jpg") no-repeat fixed center ;
+    background-size: cover;
+    border: 5px solid grey;
+}
+
+#book_s3 article {
+    margin-bottom: 20%;
+    padding: 20px;
+}
+
+
+.book h6 {
+    color: brown;
+    font: oblique normal bold large serif;
+}
+
+
+footer p {
+    padding: 5px;
+}
